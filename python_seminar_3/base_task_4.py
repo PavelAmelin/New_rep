@@ -1,7 +1,15 @@
-# def my_func(*args):
-#     lst_arg = [i for i in args]
-#     lst_arg.sort()
-#     return lst_arg[-2] + lst_arg[-1]
+# 4. Реализовать функцию my_func(), которая принимает три позиционных аргумента,
+# и возвращает сумму наибольших двух аргументов.
+# Попробуйте решить задачу двумя способами:
+
+#  1) используя функцию sort()
+
+def my_func(*args):
+    lst_arg = [i for i in args]
+    lst_arg.sort()
+    return lst_arg[-2] + lst_arg[-1]
+
+# 2) без функции sort()
 
 def my_func(*args):
     lst_arg = [i for i in args]
