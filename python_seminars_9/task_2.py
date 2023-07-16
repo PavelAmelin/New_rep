@@ -1,13 +1,13 @@
 # 2) реализовать метакласс. позволяющий создавать всегда один и тот же объект класса
 
 class MetaType(type):
-    MyClass = None
+    MyClass_atr = None
 
     def __call__(cls):
-        if cls.MyClass is None:
+        if cls.MyClass_atr is None:
             new_obj = super.__call__()
-            MyClass = new_obj
-        return cls.MyClass
+            MyClass_atr = new_obj
+        return cls.MyClass_atr
 
 class MyClass(metaclass=MetaType):
 
