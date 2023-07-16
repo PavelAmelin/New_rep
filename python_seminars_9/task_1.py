@@ -1,3 +1,5 @@
+# 1) реализовать дескрипторы для любых двух классов
+
 class OnlyInt:
 
     def __set__(self, instance, value):
