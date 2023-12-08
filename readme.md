@@ -1,1 +1,1 @@
-add a conflict local
+add a conflict file
